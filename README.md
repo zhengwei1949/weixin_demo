@@ -176,3 +176,5 @@ Page({
 
 ### 使用的接口
 https://github.com/jokermonn/-Api/blob/master/Tuchong.md
+
+### 设计稿一定要是iphone6的，因为在iphone6下面的1rpx相当于是1px,如果是iphone 6 plus下1px=0.6rpx
