@@ -1,0 +1,26 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="header">
+    <input placeholder="这是一个可以自动聚焦的input" auto-focus bindconfirm="addNewItem"  />
+  </view>
+  <view class="body">
+    <view wx:for="{{todos}}" wx:key="{{index}}" class="item">
+      <view>
+        <checkbox-group bindchange="toggleItem" data-index="{{index}}">
+          <label class="checkbox">
+            <checkbox  checked="{{item.completed}}"   />
+          </label>
+        </checkbox-group>
+
+      </view>
+      <view>{{item.name}}</view>
+      <view>
+        <button type="warn" size="1" bindtap="deleteItem" data-index="{{index}}">x</button>
+      </view>
+    </view>
+  </view>
+  <view class="footer">
+    <view class="count">{{count}}</view>
+    <view bindtap="clearAll">clear completed</view>
+  </view>
+</view>

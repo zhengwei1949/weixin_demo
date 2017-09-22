@@ -1,0 +1,30 @@
+/**index.wxss**/
+.body{
+  display: flex;
+  width:80%;
+  flex-direction: column;
+  border-top:1px solid gray;
+}
+.item{
+  display: flex;
+  border: 1rpx solid gray;
+  border-top:none;
+  align-items: center;
+  justify-content: space-between;
+  padding:20rpx;
+}
+.header{
+  width:80%;
+  display: flex;
+}
+.header input{
+  flex:1;
+  border:1px solid green;
+}
+.footer{
+  display: flex;
+  justify-content: space-around;
+}
+.footer .count{
+  width:100rpx;
+}
