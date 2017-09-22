@@ -11,9 +11,9 @@
 
 ```
 .
-|____app.js 应用程序逻辑
-|____app.json 应用程序配置
-|____app.wxss 应用程序公共样式
+|____app.js 应用程序逻辑 --> https://mp.weixin.qq.com/debug/wxadoc/dev/framework/app-service/app.html
+|____app.json 应用程序配置 --> https://mp.weixin.qq.com/debug/wxadoc/dev/framework/config.html
+|____app.wxss 应用程序公共样式 --> https://mp.weixin.qq.com/debug/wxadoc/dev/framework/view/wxss.html
 |____pages 页面目录
 | |____index index页面
 | | |____index.js
@@ -31,8 +31,12 @@
 ## 如何理解小程序代码
 - wxml相当于html
     + view相当于div
-    + bindtap相当于onclick
-    + bindconfirm相当于v-bind:click.enter
+    + text相当于span
+    + view相当于div --> 更多参考：https://mp.weixin.qq.com/debug/wxadoc/dev/component/
+    + bindtap相当于onclick
+    + view相当于div我
+    + view相当于div
+   + bindconfirm相当于v-bind:click.enter
 - wxss相当于css
     + rpx相当于px
     + 支持flex布局
@@ -40,10 +44,8 @@
         2. align-items
         3. justify-content
         4. flex-direction
-- 小程序框架语法类似vue
-    + 生命周期函数 --> onLaunch相当于created
 - 整个小程序分为二个层级：应用级和页面级
-- 一个路由对应一个页面，所有的页面必须要注册到app.json当中，默认第一个页面是默认打开的时候的页面(相当于react中的indexRoute)
+- 一个路由对应一个页面，所有的页面必须要注册到app.json当中，默认第一个页面是默认打开的时候的页面(相当于react中的indexRoute),一个页面由wxss,wxml,json,js四个文件组成
 - 只支持单向数据流：我们只能在组件中通过事件改变data中的数据，一旦data中的数据发生了变化，视图会进行同步，反过来是不行的
 
 ## todoMVC案例
